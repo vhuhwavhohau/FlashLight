@@ -1,14 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+    Touch
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content
+
+
+padding>
+ 
+  
+  <div *ngIf="on">
+    <img src = "./assets/imgs/6_Touch_Free_Capacitive_Sensor_Switch_1.jpg" (click)= "on1()">
+  </div>
+  <div *ngIf="off">
+    <img src = "./assets/imgs/6_Touch_Free_Capacitive_Sensor_Switch_2.jpg" (click)= "off1()">
+  </div>
 </ion-content>
